@@ -1,8 +1,6 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
+using Factory.lib;
+using Factory.models;
 
 namespace Factory
 {
@@ -10,6 +8,15 @@ namespace Factory
     {
         static void Main(string[] args)
         {
+            CreditItemFactory factory = new CreditItemFactory();
+            //Document ci = factory.createDocument();
+            //ci.setReceiptNo(12);            
+            //Console.WriteLine(ci.isValid().ToString());
+
+            factory.processDocument();
+
+            Console.ReadKey();
+
         }
     }
 }
